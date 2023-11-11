@@ -31,3 +31,4 @@ def solution(A):
     return ( sum(range(1, (N + 1) + 1)) - sum(A))
     
 # could also get difference between two sets A, [1, ..., N+1]. Will return the one unique element.
+# Sort, each element should equal index + 1. Check until you find one that doesn't

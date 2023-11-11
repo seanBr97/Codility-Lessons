@@ -71,4 +71,13 @@ def solution(A):
             return int((list(count_dict.keys())[list(count_dict.values()).index(odd_number)]))
         odd_number += 2        
         
-    # could also loop through dict values, divide by 2, odd --> get keys[indexOf(odd_value)]
+        # could also loop through dict values, divide by 2, odd --> get keys[indexOf(odd_value)]   
+
+# ALTERNATIVE SOLUTION
+"""
+sort array
+loop through it
+maintain count of current number
+when current_num != next num (i.e. counting of current number is finished)
+check odd (%2 == 0) --> return
+"""

@@ -21,7 +21,7 @@ def solution(A):
     for P in range(len(sorted_A) - 2):
         Q = P + 1
         R = Q + 1
-        if (sorted_A[P] + sorted_A[Q] > sorted_A[R]) and (sorted_A[Q] + sorted_A[R] + sorted_A[P]) and (sorted_A[R] + sorted_A[P] > sorted_A[Q]):
+        if (sorted_A[P] + sorted_A[Q] > sorted_A[R]) and (sorted_A[Q] + sorted_A[R] > sorted_A[P]) and (sorted_A[R] + sorted_A[P] > sorted_A[Q]):
             return 1
 
     return 0
